@@ -31,18 +31,13 @@
       #position-5 {
         transform: translate(68%, -73.5%);
       }
-      #position1,
-      #position2,
-      #position3,
-      #position4 {
-      }
     </style>
   </head>
   <body>
     <!-- <div class="main-container"> -->
     <div class="container">
       <div class="mob-border">
-        <div class="screen-border">
+        <div class="screen-border" id="screen-border">
           <div class="center">
             <!-- Top Triangle -->
             <svg id="position-2" height="20" width="200">
@@ -95,11 +90,43 @@
               ></i
             ></span>
           </div>
-          <div class="search-bar">
+          <!--  -->
+          <div id="pop-up" class="pop-up" style="display: none">
+            <img
+              src="./assets/sky.jpeg"
+              alt=""
+              style="width: 100%; height: 213.55px"
+            />
+            <p
+              style="
+                background: black;
+                margin: 0px;
+                padding: 0 10px;
+                height: 329px;
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus error consectetur iusto nulla aperiam molestiae ad
+              nemo? Adipisci reprehenderit unde fuga magni aspernatur aliquam
+              eos deserunt error. Dolorem, tenetur quidem! Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Ullam fugit facilis commodi
+              quisquam atque optio ratione, iure pariatur, quam a quasi eaque
+              distinctio quae ut vel maiores, placeat nemo. Ullam. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Sapiente itaque
+              eligendi rem, dolorem laudantium quia odit iusto vero sunt ullam
+              nulla eos quam nam officiis ex corporis dolores nesciunt fuga?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              officia esse molestias perspiciatis illo veritatis reiciendis
+              fugit consequatur numquam similique accusamus, ducimus laudantium
+              nisi quidem, accusantium doloribus a deserunt cupiditate.
+            </p>
+          </div>
+          <!--  -->
+          <div class="search-bar" id="search-bar">
             <i class="fas fa-microphone fa-logo1"></i>
             <i class="fas fa-microphone fa-mic1"></i>
           </div>
-          <div class="display-time">
+          <div class="display-time" id="display-time">
             <span class="small-size">MERN </span
             ><span class="small-size" id="day">SEP</span>,
             <span class="small-size" id="date">25</span>
@@ -112,10 +139,127 @@
               </div>
             </div>
           </div>
+          <div class="icons" id="icons">
+            <div class="icons-row">
+              <span>
+                <img
+                  id="img1"
+                  src="./assets/avocat.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+              <span class="icon-2">
+                <img
+                  id="img2"
+                  src="./assets/finance.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+              <span class="icon-3">
+                <img
+                  id="img3"
+                  src="./assets/immo.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="texts" id="texts">
+            <span>ETUDE AVOCAT</span
+            ><span class="text-2">FINANCE-PATIMIONE</span
+            ><span class="text-3">REGIE IMMO.</span>
+          </div>
+          <div class="icons-1" id="icons-1">
+            <div class="icons-row">
+              <span>
+                <img
+                  id="img4"
+                  src="./assets/dentiste.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+              <span class="icon-2">
+                <img
+                  id="img5"
+                  src="./assets/ong.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+              <span class="icon-3">
+                <img
+                  id="img6"
+                  src="./assets/PME.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="texts-1" id="texts-1">
+            <span>Medical</span><span class="text-5">O.N.G</span
+            ><span class="text-6">P.M.E</span>
+          </div>
+          <div class="icons-2" id="icons-2">
+            <div class="icons-row">
+              <span>
+                <img
+                  id="img7"
+                  src="./assets/gouvernement.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+              <span class="icon-2">
+                <img
+                  id="img8"
+                  src="./assets/industriel.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+              <span class="icon-3">
+                <img
+                  id="img9"
+                  src="./assets/coorporation.png"
+                  alt=""
+                  class="avocat"
+                  width="55"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="texts-2" id="texts-2">
+            <span>GOUVERNMENT</span><span class="text-8">INDUSTRIEL</span
+            ><span class="text-9">CORPORATION</span>
+          </div>
         </div>
       </div>
     </div>
-    <!-- </div> -->
+    <!-- <div class="results">
+      <img style="clear: both" src="./assets/sky.jpeg" alt="" />
+      <span style="color: black">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, atque
+        nisi. Necessitatibus alias dolorem ipsa iusto? Doloribus at corrupti
+        perferendis nisi voluptatibus molestias laboriosam architecto molestiae
+        maiores. Illo, magni deserunt. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Voluptas accusantium, beatae sapiente quis minima amet
+        odit harum tempora tempore distinctio rerum, voluptates est nam incidunt
+        nisi, aspernatur assumenda numquam asperiores?
+      </span>
+    </div> -->
     <script src="./index.js" defer></script>
   </body>
 </html>
