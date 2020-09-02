@@ -132,4 +132,4 @@ const popDOWN = () => {
   SCREEN_BORDER.style.background = "url('./assets/background.png')";
   SCREEN_BORDER.style.backgroundSize = "cover";
 };
-POPUP.addEventListener("dblclick", popDOWN);
+POPUP.addEventListener("click", popDOWN);
