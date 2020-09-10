@@ -16,26 +16,31 @@
         position: relative;
         top: -2%;
       }
+
       #position-1 {
         position: relative;
         transform: translateY(-61%);
       }
+
       #position-3 {
         position: relative;
         transform: translateY(-178.75%);
       }
+
       #position-4 {
         position: relative;
         transform: translate(-81%, -215px);
       }
+
       #position-5 {
         transform: translate(68%, -73.5%);
       }
     </style>
   </head>
-  <body>
+
+  <body style="background: black">
     <!-- <div class="main-container"> -->
-    <div class="container">
+    <div class="container" id="container">
       <div class="mob-border">
         <div class="screen-border" id="screen-border">
           <div class="center">
@@ -92,44 +97,78 @@
           </div>
           <!--  -->
           <div id="pop-up" class="pop-up" style="display: none">
-            <img
+            <div
+              class="bg-popup"
+              id="bg-popup"
+              style="width: 100%; height: 213.55px"
+            ></div>
+            <!-- <img
               src="./assets/sky.jpeg"
               alt=""
               style="width: 100%; height: 213.55px"
-            />
-            <p
-              style="
-                background: black;
-                margin: 0px;
-                padding: 0 10px;
-                height: 329px;
-              "
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus error consectetur iusto nulla aperiam molestiae ad
-              nemo? Adipisci reprehenderit unde fuga magni aspernatur aliquam
-              eos deserunt error. Dolorem, tenetur quidem! Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Ullam fugit facilis commodi
-              quisquam atque optio ratione, iure pariatur, quam a quasi eaque
-              distinctio quae ut vel maiores, placeat nemo. Ullam. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Sapiente itaque
-              eligendi rem, dolorem laudantium quia odit iusto vero sunt ullam
-              nulla eos quam nam officiis ex corporis dolores nesciunt fuga?
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-              officia esse molestias perspiciatis illo veritatis reiciendis
-              fugit consequatur numquam similique accusamus, ducimus laudantium
-              nisi quidem, accusantium doloribus a deserunt cupiditate.
-            </p>
+            /> -->
+            <div style="overflow: scroll">
+              <h3 id="custom-heading">S</h3>
+              <p
+                id="popup-content"
+                style="
+                  background: white;
+                  color: black;
+                  margin: 0px;
+                  padding: 0 10px;
+                  height: 240px;
+                "
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus error consectetur iusto nulla aperiam molestiae ad
+                nemo? Adipisci reprehenderit unde fuga magni aspernatur aliquam
+                eos deserunt error. Dolorem, tenetur quidem! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Ullam fugit facilis
+                commodi quisquam atque optio ratione, iure pariatur, quam a
+                quasi eaque distinctio quae ut vel maiores, placeat nemo. Ullam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente itaque eligendi rem, dolorem laudantium quia odit iusto
+                vero sunt ullam nulla eos quam nam officiis ex corporis dolores
+                nesciunt fuga? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Deleniti officia esse molestias perspiciatis
+                illo veritatis reiciendis fugit consequatur numquam similique
+                accusamus, ducimus laudantium nisi quidem, accusantium doloribus
+                a deserunt cupiditate. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Temporibus error consectetur iusto nulla
+                aperiam molestiae ad nemo? Adipisci reprehenderit unde fuga
+                magni aspernatur aliquam eos deserunt error. Dolorem, tenetur
+                quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ullam fugit facilis commodi quisquam atque optio ratione, iure
+                pariatur, quam a quasi eaque distinctio quae ut vel maiores,
+                placeat nemo. Ullam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sapiente itaque eligendi rem, dolorem
+                laudantium quia odit iusto vero sunt ullam nulla eos quam nam
+                officiis ex corporis dolores nesciunt fuga? Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Deleniti officia esse
+                molestias perspiciatis illo veritatis reiciendis fugit
+                consequatur numquam similique accusamus, ducimus laudantium nisi
+                quidem, accusantium doloribus a deserunt cupiditate.
+              </p>
+            </div>
+            <span><i class="fas fa-times"></i></span>
           </div>
           <!--  -->
+          <!--  -->
           <div class="search-bar" id="search-bar">
-            <i class="fas fa-microphone fa-logo1"></i>
+            <span class="fa-logo1"
+              ><img
+                style="position: relative; top: 4px"
+                src="./assets/150px_logo.png"
+                alt=""
+                width="30px"
+            /></span>
+
             <i class="fas fa-microphone fa-mic1"></i>
           </div>
           <div class="display-time" id="display-time">
-            <span class="small-size">MERN </span
-            ><span class="small-size" id="day">SEP</span>,
-            <span class="small-size" id="date">25</span>
+            <span class="small-size" id="day"></span
+            ><span class="small-size" id="month"></span>,
+            <span class="small-size" id="date"></span>
             <div>
               <span class="small-size">Geneve</span>
               <div>

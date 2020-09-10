@@ -83,14 +83,17 @@ body {
 }
 .fa-logo1 {
   position: relative;
-  left: -38%;
+  left: -32%;
+  top: -10%;
 }
 .fa-mic1 {
+  color: #0096dc;
   position: relative;
-  left: 38%;
+  left: 33%;
+  top: -3px;
 }
 .display-time {
-  width: 30%;
+  width: 33%;
   text-align: left;
   left: 10%;
   position: relative;
@@ -176,4 +179,20 @@ body {
   /* display: none; */
   position: relative;
   top: -32%;
+}
+.fa-times {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    /* margin: 0 2rem; */
+    position: relative;
+    margin: 0px;
+    /* left: -15rem; */
+  }
+  .pop-up {
+    /* width: 150%; */
+  }
 }
